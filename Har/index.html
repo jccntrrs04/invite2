@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#1b1b4b">
+<title>An invitation for you ✨</title>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<button class="mute" id="mute" aria-label="Toggle sound">🔊</button>
+
+<div class="sky" aria-hidden="true">
+  <div class="stars"></div>
+  <div class="moon"></div>
+  <div class="glow"></div>
+</div>
+<div class="flies" id="flies" aria-hidden="true"></div>
+<div class="mountains" aria-hidden="true">
+  <svg class="m1" viewBox="0 0 1200 200" preserveAspectRatio="none"><path d="M0 200V115L130 55 250 110 380 35 520 118 660 60 800 125 940 45 1070 110 1200 65V200Z" fill="#5c4f93"/></svg>
+  <svg class="m2" viewBox="0 0 1200 200" preserveAspectRatio="none"><path d="M0 200V135L150 78 300 130 450 66 600 135 760 80 920 140 1080 85 1200 130V200Z" fill="#35337a"/></svg>
+  <svg class="m3" viewBox="0 0 1200 200" preserveAspectRatio="none"><path d="M0 200V150L110 112 240 156 380 108 520 160 680 118 840 166 1000 124 1200 160V200Z" fill="#1b1b4b"/></svg>
+  <div class="pines"><span>🌲</span><span>🌲</span><span>🌲</span><span>🌲</span><span>🌲</span><span>🌲</span><span>🌲</span></div>
+</div>
+
+<main class="stage">
+  <p class="hint" id="hint">A little something just for you ✨</p>
+  <button class="env" id="env" aria-label="Open your invitation">
+    <span class="back"></span><span class="flap"></span><span class="front"></span>
+    <span class="seal" id="seal">H</span>
+  </button>
+
+  <section class="card" id="card" aria-live="polite">
+    <p class="hello" id="hello"></p>
+    <h1 id="title"></h1>
+    <div class="divider" aria-hidden="true"><span></span>⛰️<span></span></div>
+    <p class="lead" id="lead"></p>
+    <div class="info">
+      <div><i>📍</i><span><small>Where</small><span id="where"></span></span></div>
+      <div><i>📅</i><span><small>When</small><span id="when"></span></span></div>
+      <div><i>🚗</i><span><small>Meet up</small><span id="meet"></span></span></div>
+      <div><i>👥</i><span><small>Who's coming</small><span id="who"></span></span></div>
+    </div>
+    <ul class="chips" id="chips"></ul>
+    <div class="count" id="count" aria-label="Countdown"></div>
+    <div class="btns">
+      <button class="btn yes" id="yes">I'm in! 🤙</button>
+      <button class="btn maybe" id="maybe">Let me check 🤔</button>
+    </div>
+    <p class="thanks" id="thanks"></p>
+    <button class="btn yes send" id="sendRsvp" hidden>Send my RSVP email 💌</button>
+    <p class="sign" id="sign"></p>
+  </section>
+</main>
+
+<script src="config.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
